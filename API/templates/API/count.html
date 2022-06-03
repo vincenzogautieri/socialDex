@@ -1,0 +1,15 @@
+{% extends 'API/home.html' %}
+
+{% block content %}
+<h1>Administration</h1>
+{% if user.is_superuser %}
+{% for user in user_posts %}
+<div>
+    {{user.username}}
+</div>
+<div>
+    <p> Number of Posts: {{user.total}} </p>
+</div>
+{% endfor %}
+{% endif %}
+{% endblock %}
