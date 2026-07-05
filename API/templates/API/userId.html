@@ -1,0 +1,9 @@
+{% extends 'API/home.html' %}
+
+{% block content %}
+<h1>User ID</h1>
+<p> <b> Username: </b> {{user.username }}</p>
+<p> <b> First name: </b> {{ user.first_name }}</p>
+<p> <b> Last name: </b> {{ user.last_name }}</p>
+<p> <b> Number of posts: </b> {{ user_posts }} </p>
+{% endblock %}

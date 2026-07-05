@@ -1,0 +1,19 @@
+# Secrets
+.env
+
+# Database (contains real user data — never commit it)
+db.sqlite3
+*.sqlite3
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Django
+staticfiles/
+
+# IDE / OS
+.idea/
+.DS_Store
